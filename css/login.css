@@ -14,3 +14,8 @@ body {
   background-color: #4b00a0; 
   border-color: #38007d; 
 }
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
