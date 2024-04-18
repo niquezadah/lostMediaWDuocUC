@@ -1,1 +1,74 @@
-editar perfil
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar perfil</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilos personalizados */
+    .container {
+      padding: 20px;
+    }
+    .banner img {
+      max-width: 100%;
+    }
+    .profile-section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .profile-avatar img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .profile-details h2 {
+      margin-bottom: 5px;
+    }
+    .profile-details p {
+      margin-bottom: 0;
+    }
+    .edit-profile-button {
+      margin-left: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="banner">
+    <img src="../img/logo.png" alt="Banner del foro">
+  </div>
+
+  <div class="profile-section">
+    <div class="profile-avatar">
+      <img src="../img/perfilforto.png" alt="Avatar del usuario">
+    </div>
+    <div class="profile-details">
+      <h2>Nombre de Usuario</h2>
+      <p>@nombredeusuario</p>
+    </div>
+    <a href="profile.html" class="btn btn-sm btn-primary edit-profile-button">Guardar cambios</a>
+  </div>
+
+  <form>
+    <div class="form-group">
+      <label for="username"><b>Nombre de usuario actual: </b>Nombre de usuario</label>
+      <input type="text" class="form-control" id="username" placeholder="Nuevo nombre de usuario">
+    </div>
+    <div class="form-group">
+      <label for="image"><b>Seleccionar foto de perfil</b>:</label>
+      <input type="file" class="form-control-file" id="image">
+    </div>
+    <div class="form-group">
+      <label for="password"><b>Antes de guardar cambios...</b></label>
+      <input type="password" class="form-control" id="password" placeholder="Escribe tu contraseña">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
