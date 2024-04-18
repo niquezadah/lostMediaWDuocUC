@@ -53,3 +53,10 @@ body {
   margin-top: 20px; 
   display: block; 
 }
+
+.edit-profile-button {
+  margin-top: -80px;
+  margin-left: 373px;
+  background-color: #5f28c4;
+
+}
